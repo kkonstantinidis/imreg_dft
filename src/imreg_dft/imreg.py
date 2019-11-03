@@ -137,11 +137,6 @@ def _get_ang_scale(ims, bgval, exponent='inf', constraints=None, reports=None):
                 -90, 90
             )
 
-    if not 0.5 < scale < 2:
-        raise ValueError(
-            "Images are not compatible. Scale change %g too big to be true."
-            % scale)
-
     return scale, angle
 
 
